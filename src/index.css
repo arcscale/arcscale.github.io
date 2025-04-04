@@ -1,0 +1,64 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 30% 95%;
+    --foreground: 163 67% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 163 67% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 163 67% 15%;
+
+    --primary: 163 67% 15%;
+    --primary-foreground: 48 30% 95%;
+
+    --secondary: 48 30% 89%;
+    --secondary-foreground: 163 67% 15%;
+
+    --muted: 48 30% 89%;
+    --muted-foreground: 163 67% 35%;
+
+    --accent: 48 30% 89%;
+    --accent-foreground: 163 67% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 48 30% 95%;
+
+    --border: 163 67% 25%;
+    --input: 163 67% 25%;
+    --ring: 163 67% 15%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .arc-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .service-card {
+    @apply rounded-lg p-6 transition-all duration-300 hover:shadow-lg bg-white border border-arcbeige-dark;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-arcgreen to-arcgreen-light bg-clip-text text-transparent;
+  }
+  
+  .cta-button {
+    @apply px-6 py-3 bg-arcgreen text-arcbeige font-semibold rounded-md transition-all duration-300 hover:bg-arcgreen-light;
+  }
+}
