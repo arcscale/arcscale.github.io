@@ -9,32 +9,19 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #113422;
+      background-color: #fefefe;
     }
-
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 2rem;
+      padding: 1rem 2rem;
       background-color: white;
       border-bottom: 1px solid #eee;
     }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #113422;
-      font-weight: 500;
+    header img {
+      height: 40px;
     }
-
-    .cta-button {
-      background-color: #113422;
-      color: white;
-      padding: 0.6rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
     .hero {
       background-color: #e8d9c3;
       padding: 4rem 2rem;
@@ -43,39 +30,25 @@
       align-items: center;
       flex-wrap: wrap;
     }
-
     .hero-text {
       max-width: 600px;
     }
-
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
-
     .hero p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
     }
-
     .buttons a {
       padding: 0.75rem 1.25rem;
       border-radius: 4px;
-      margin-right: 1rem;
       font-weight: bold;
       text-decoration: none;
-    }
-
-    .primary {
       background-color: #113422;
       color: white;
     }
-
-    .secondary {
-      border: 2px solid #113422;
-      color: #113422;
-    }
-
     .stats {
       background: white;
       padding: 1.5rem;
@@ -83,24 +56,42 @@
       box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
       margin-top: 2rem;
     }
-
     .services {
       padding: 4rem 2rem;
+      background-color: #fff;
       text-align: center;
-      background-color: #f7f7f7;
     }
-
     .services h2 {
       font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .service-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .card {
+      flex: 1 1 250px;
+      max-width: 320px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: left;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .card img {
+      height: 40px;
       margin-bottom: 1rem;
     }
-
-    .services p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto;
+    .card h3 {
+      margin: 0 0 0.5rem;
     }
-
+    .card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
     footer {
       padding: 2rem;
       text-align: center;
@@ -110,14 +101,9 @@
   </style>
 </head>
 <body>
+
   <header>
-    <div><strong>ARC</strong></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#clients">Clients</a>
-      <a href="#about">About</a>
-      <a class="cta-button" href="#book">Book a Call</a>
-    </nav>
+    <img src="logo.png" alt="ARC logo" />
   </header>
 
   <section class="hero">
@@ -125,8 +111,7 @@
       <h1>Scale Your Growth With Expert Marketing</h1>
       <p>Specialized in DTC Growth & Retention Marketing and Amazon Ads, we help brands reach their full potential.</p>
       <div class="buttons">
-        <a href="#book" class="primary">Book a Strategy Call</a>
-        <a href="#services" class="secondary">Our Services</a>
+        <a href="https://calendly.com/angus-arc-scale/30min" target="_blank">Book a Strategy Call</a>
       </div>
     </div>
     <div class="stats">
@@ -136,13 +121,31 @@
     </div>
   </section>
 
-  <section id="services" class="services">
+  <section class="services">
     <h2>Our Services</h2>
-    <p>We provide tailored marketing solutions to help your brand reach its full potential and achieve sustainable growth.</p>
+    <div class="service-cards">
+      <div class="card">
+        <img src="service-growth.png" alt="Growth icon" />
+        <h3>DTC Growth Marketing</h3>
+        <p>Strategic customer acquisition campaigns that scale your direct-to-consumer business with sustainable growth tactics and optimized conversion rates.</p>
+      </div>
+      <div class="card">
+        <img src="service-retention.png" alt="Retention icon" />
+        <h3>DTC Retention Marketing</h3>
+        <p>Customer retention strategies that maximize lifetime value through personalized email marketing, loyalty programs, and post-purchase engagement.</p>
+      </div>
+      <div class="card">
+        <img src="service-ads.png" alt="Amazon icon" />
+        <h3>Amazon Ads</h3>
+        <p>Specialized Amazon advertising campaigns that increase visibility, optimize product listings, and drive conversions on the world's largest marketplace.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
     &copy; 2025 ARC Scale. All rights reserved.
   </footer>
+
 </body>
 </html>
+
